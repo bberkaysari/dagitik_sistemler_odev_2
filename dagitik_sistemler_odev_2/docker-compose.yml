@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  mpi_master:
+    build: .
+    container_name: mpi_master
+    networks:
+      - mpi_network
+    stdin_open: true
+    tty: true
+    deploy:
+      replicas: 1
+    environment:
+      - OMPI_ALLOW_RUN_AS_ROOT=1
+      - OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+    command: ["/bin/bash", "-c", "mpirun -np 6 ./mpi_openmp.out && sleep infinity"]
+
+  worker:
+    build: .
+    networks:
+      - mpi_network
+    stdin_open: true
+    tty: true
+    deploy:
+      replicas: 5
+    environment:
+      - OMPI_ALLOW_RUN_AS_ROOT=1
+      - OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+    command: ["/bin/bash", "-c", "sleep infinity"]
+
+networks:
+  mpi_network:
+    driver: bridge
