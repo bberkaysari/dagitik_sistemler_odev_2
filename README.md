@@ -44,7 +44,7 @@ Proje, Docker kullanarak **bir master ve birden fazla worker düğümü** oluşt
 ### 2. Projeyi Klonlayın
 
 ```sh
-git clone https://github.com/kullaniciadi/mpi-openmp-dagitik.git](https://github.com/bberkaysari/dagitik_sistemler_odev_2.git
+git clone https://github.com/bberkaysari/dagitik_sistemler_odev_2.git
 cd mpi-openmp-dagitik
 ```
 
