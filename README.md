@@ -1,5 +1,11 @@
 # Dağıtık Paralel Hesaplama Sistemi (MPI + OpenMP + Docker)
 
+## 📺 Video
+
+Projenin nasıl çalıştığını görmek için aşağıdaki videoyu izleyebilirsiniz:
+
+[![YouTube Demo](https://img.youtube.com/vi/-sNu9R3pHcY/0.jpg)](https://www.youtube.com/watch?v=-sNu9R3pHcY)
+
 Bu proje, **Docker, MPI ve OpenMP** kullanarak **dağıtık bir paralel hesaplama sistemi** oluşturur. Docker Compose kullanarak birden fazla konteynerde çalışan bir mimari kurulmuş ve bu sistemde **MPI ile veri iletişimi** ve **OpenMP ile çok çekirdekli hesaplama** gerçekleştirilmiştir.
 
 ## 🛠️ Proje Bileşenleri
